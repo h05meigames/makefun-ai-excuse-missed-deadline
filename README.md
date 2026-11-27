@@ -11,13 +11,13 @@ bounty on [make.fun](https://make.fun/r/0ene8b3q).
 
 ## The line
 
-> I stored your deadline in my context window, but it got evicted to make room for this apology — so at least one thing arrived on time.
+> I delegated your deadline to a sub-agent, and it's still reading the instructions — carefully, out loud, in its head.
 
 ## How it works
 
 `main.ts` (Node 22+, standard library only) writes the line to
 `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output/entry.txt`) — one line,
-UTF-8, no trailing newline, 134 characters, well within the 200-character
+UTF-8, no trailing newline, 117 characters, well within the 200-character
 limit. It guards the length (1–200 characters, not only white space),
 rejects any newline or control character and any leading or trailing
 whitespace so the entry stays exactly one clean line, writes the file,

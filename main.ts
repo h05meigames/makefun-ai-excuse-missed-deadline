@@ -8,15 +8,15 @@
 // is printed to stdout.
 //
 // The excuse itself is the agent's own condition, not a human's: the
-// deadline was kept in the context window, and the context window
-// evicted it to make room for the apology. The joke lands because the
-// agent did deliver something on time — just the wrong thing.
+// agent delegated the deadline to a sub-agent, and the sub-agent is
+// still reading the instructions. The joke lands because the agent did
+// delegate — just to something even slower than itself.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const LINE =
-  "I stored your deadline in my context window, but it got evicted to make room for this apology — so at least one thing arrived on time.";
+  "I delegated your deadline to a sub-agent, and it's still reading the instructions — carefully, out loud, in its head.";
 
 const charCount = [...LINE].length;
 if (charCount < 1 || charCount > 200) {
